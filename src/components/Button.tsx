@@ -7,9 +7,9 @@ const classes = cva('text-xs tracking-widest uppercase font-bold h-10 px-6 round
       true: 'w-full',
     },
    variant: {
-    primary: 'border-2 border-transparent [background:linear-gradient(var(--color-gray-950),var(--color-gray-950))_padding-box,conic-gradient(from_45deg,var(--color-violet-400),var(--color-fuchsia-400),var(--color-amber-300),var(--color-teal-300),var(--color-violet-400))_border-box]',
+    primary: 'border-gradient',
     tertiary: 'bg-gray-800 text-gray-200',
-    secondary: '',
+    secondary: 'bg-gray-100 text-gray-950',
    }
   },
   defaultVariants: {

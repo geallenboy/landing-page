@@ -35,9 +35,7 @@ export const Hero = () => {
                     maskPosition: "center",
                     maskRepeat: "no-repeat",
                   }}
-                >
-                  {" "}
-                </span>
+                ></span>
               </span>
             </h1>
             <p className="text-center mt-8 max-w-3xl mx-auto text-lg md:text-xl lg:text-2xl">

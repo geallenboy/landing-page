@@ -5,6 +5,8 @@ import Hero from "@/sections/Hero";
 import Pricing from "@/sections/Pricing";
 import Testimonials from "@/sections/Testimonials";
 import CallToAction from "@/sections/CallToAction";
+import Footer from "@/sections/Footer";
+
 export default function Home() {
   return (
     <>
@@ -15,6 +17,7 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <CallToAction />
+      <Footer />
     </>
   );
 }

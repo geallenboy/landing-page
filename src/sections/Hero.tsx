@@ -9,7 +9,7 @@ import Planet from "@/components/Planet";
 import SectionBorder from "@/components/SectionBorder";
 import SectionContent from "@/components/SectionContent";
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <section>
       <div className="container">

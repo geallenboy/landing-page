@@ -35,7 +35,7 @@ export const loginItems = [
   href: string;
   buttonVariant: ButtonVariant["variant"];
 }[];
-const Header = () => {
+export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

@@ -1,15 +1,31 @@
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { twMerge } from "tailwind-merge";
 
-const SectionBorder = (props: React.HTMLAttributes<HTMLDivElement>) => {
-  const { children, className } = props;
+const SectionBorder = (
+  props: React.HTMLAttributes<HTMLDivElement> & { borderTop?: boolean }
+) => {
+  const { children, className, borderTop, ...otherProps } = props;
 
   return (
     <div
       className={twMerge(
-        "border-l border-r border-[var(--color-border)]",
+        "border-l border-r border-[var(--color-border)] relative",
+        borderTop && "border-t",
         className
       )}
+      {...otherProps}
     >
+      {borderTop && (
+        <>
+          <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2">
+            <FontAwesomeIcon icon={faPlus} className="size-4 text-gray-200" />
+          </div>
+          <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2">
+            <FontAwesomeIcon icon={faPlus} className="size-4 text-gray-200" />
+          </div>
+        </>
+      )}
       {children}
     </div>
   );

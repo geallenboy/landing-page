@@ -64,14 +64,14 @@ export const pricingTiers = [
 
 export const Pricing = () => {
   return (
-    <section>
+    <section id="pricing">
       <div className="container">
         <SectionBorder borderTop>
           <SectionContent className="md:px-20 lg:px-40">
             <h2 className="text-3xl md:text-4xl lg:text-5xl leading-tight font-semibold text-center text-gray-200 ">
               Flexible plans for every need
             </h2>
-            <div className="mt-12 flex flex-col lg:items-start lg:flex-row gap-8">
+            <div className="mt-12 flex flex-col items-center lg:items-start lg:flex-row gap-8">
               {pricingTiers.map((tier) => (
                 <div
                   key={tier.title}

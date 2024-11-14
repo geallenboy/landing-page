@@ -37,7 +37,14 @@ export const loginItems = [
 }[];
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const aClick = (e: { preventDefault: () => void }, href: string) => {
+    e.preventDefault();
+    const element = document.querySelector(href);
+    if (element) {
+      setIsOpen(false);
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <header className="border-b border-gray-200/20 relative z-40">
@@ -54,6 +61,7 @@ export const Header = () => {
                     className='h-full px-10 relative font-bold text-xs tracking-widest text-gray-400 uppercase inline-flex items-center before:content-[""] before:absolute before:bottom-0 before:h-2 before:w-px before:bg-gray-200/20 before:left-0 last:after:absolute last:after:bottom-0 last:after:h-2 last:after:w-px last:after:bg-gray-200/20 last:after:right-0 '
                     key={item.name}
                     href={item.href}
+                    onClick={(e) => aClick(e, item.href)}
                   >
                     {item.name}
                   </a>
@@ -109,6 +117,7 @@ export const Header = () => {
                   className="text-gray-400 uppercase tracking-widest text-xs font-bold h-10"
                   key={item.name}
                   href={item.href}
+                  onClick={(e) => aClick(e, item.href)}
                 >
                   {item.name}
                 </a>

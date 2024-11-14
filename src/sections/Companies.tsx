@@ -1,3 +1,5 @@
+"use client";
+
 import AcmeCorpLogo from "../assets/images/acme-corp-logo.svg";
 import EchoValleyLogo from "../assets/images/echo-valley-logo.svg";
 import QuantumLogo from "../assets/images/quantum-logo.svg";
@@ -6,6 +8,7 @@ import OutsideLogo from "../assets/images/outside-logo.svg";
 import CelestialLogo from "../assets/images/celestial-logo.svg";
 import SectionBorder from "@/components/SectionBorder";
 import SectionContent from "@/components/SectionContent";
+import { motion } from "framer-motion";
 
 export const companies = [
   {
@@ -44,13 +47,26 @@ export const Companies = () => {
               Empowering creators at leading companies
             </h2>
             <div className="flex mt-20 overflow-x-clip -mx-4 lg:-mx-8">
-              <div className="flex flex-none gap-18 md:gap-36 px-18">
-                {companies.map(({ logo: Logo, name }) => (
-                  <div key={name}>
+              <motion.div
+                className="flex flex-none gap-18 md:gap-36 px-9 md:px-18"
+                animate={{
+                  x: "-20%",
+                }}
+                initial={{
+                  x: "0",
+                }}
+                transition={{
+                  duration: 10,
+                  ease: "linear",
+                  repeat: Infinity,
+                }}
+              >
+                {[...companies, ...companies].map(({ logo: Logo, name }, i) => (
+                  <div key={name + i}>
                     <Logo className="h-8" />
                   </div>
                 ))}
-              </div>
+              </motion.div>
             </div>
           </SectionContent>
         </SectionBorder>

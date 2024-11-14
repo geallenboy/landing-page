@@ -1,3 +1,5 @@
+"use client";
+
 import slackLogo from "../assets/images/slack-logo.png";
 import dockerLogo from "../assets/images/docker-logo.png";
 import figmaLogo from "../assets/images/figma-logo.png";
@@ -14,6 +16,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import Logo from "@/components/Logo";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export const features = [
   "Effortless integration",
@@ -96,17 +99,69 @@ export const Features = () => {
                     <Logo className="size-24" />
                   </div>
                   {logos.map((logo) => (
-                    <div
+                    <motion.div
                       key={logo.alt}
-                      style={{
-                        transform: `rotate(${logo.rotate}deg)`,
+                      initial={{
+                        rotate: logo.rotate,
+                      }}
+                      animate={{
+                        rotate: [
+                          logo.rotate,
+                          logo.rotate + 45,
+                          logo.rotate + 45,
+                          logo.rotate + 90,
+                          logo.rotate + 90,
+                          logo.rotate + 135,
+                          logo.rotate + 135,
+                          logo.rotate + 180,
+                          logo.rotate + 180,
+                          logo.rotate + 225,
+                          logo.rotate + 225,
+                          logo.rotate + 270,
+                          logo.rotate + 270,
+                          logo.rotate + 315,
+                          logo.rotate + 315,
+                          logo.rotate + 360,
+                        ],
+                      }}
+                      transition={{
+                        duration: 10,
+
+                        repeat: Infinity,
                       }}
                       className={`absolute inset-0`}
                     >
-                      <div
-                        className="inline-flex size-10 md:size-14 items-center justify-center border border-[var(--color-border)] rounded-lg absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-gray-900"
-                        style={{
-                          transform: `translate(-50%, -50%) rotate(-${logo.rotate}deg)`,
+                      <motion.div
+                        className="flex size-10 md:size-14 items-center justify-center border border-[var(--color-border)] rounded-lg absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-gray-900"
+                        initial={{
+                          x: "-50%", // 使用 x 和 y 来代替 transform
+                          y: "-50%",
+                          rotate: -logo.rotate,
+                        }}
+                        transition={{
+                          duration: 10,
+
+                          repeat: Infinity,
+                        }}
+                        animate={{
+                          rotate: [
+                            -logo.rotate,
+                            -logo.rotate - 45,
+                            -logo.rotate - 45,
+                            -logo.rotate - 90,
+                            -logo.rotate - 90,
+                            -logo.rotate - 135,
+                            -logo.rotate - 135,
+                            -logo.rotate - 180,
+                            -logo.rotate - 180,
+                            -logo.rotate - 225,
+                            -logo.rotate - 225,
+                            -logo.rotate - 270,
+                            -logo.rotate - 270,
+                            -logo.rotate - 315,
+                            -logo.rotate - 315,
+                            -logo.rotate - 360,
+                          ],
                         }}
                       >
                         <Image
@@ -114,8 +169,8 @@ export const Features = () => {
                           alt={logo.alt}
                           className="size-6 md:size-9"
                         />
-                      </div>
-                    </div>
+                      </motion.div>
+                    </motion.div>
                   ))}
                 </div>
               </div>

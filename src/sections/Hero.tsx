@@ -75,7 +75,7 @@ export const Hero = () => {
               <Orbit className="size-[1350px]" />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-100 max-w-3xl mx-auto text-center leading-tight">
-              Unlock the Future of AI Conversations with{" "}
+              解锁未来的 AI 对话与
               <span className="relative">
                 <span>Sphereal</span>
                 <span
@@ -90,13 +90,12 @@ export const Hero = () => {
               </span>
             </h1>
             <p className="text-center mt-8 max-w-3xl mx-auto text-lg md:text-xl lg:text-2xl">
-              Harness the power of AI with Sphereal. Elevate your productivity
-              and streamline your workflows with our cutting-edge AI chat
-              platform
+              利用 Sphereal 的 AI
+              力量，提高生产力，简化工作流程，体验我们最前沿的 AI 聊天平台。
             </p>
             <div className="flex justify-center">
               <Button variant="secondary" className="mt-10">
-                Start Chatting
+                开始聊天
               </Button>
             </div>
             <div className="relative isolate max-w-5xl mx-auto">
@@ -156,11 +155,9 @@ export const Hero = () => {
                     y: transformedY,
                   }}
                 >
-                  <div>
-                    Can you generae an icredible frontend de video tutorial?
-                  </div>
+                  <div>你能生成一个令人难以置信的前端视频教程吗？</div>
                   <div className="text-right text-gray-400 text-sm font-semibold">
-                    1m ago
+                    一分钟前
                   </div>
                 </motion.div>
               </div>
@@ -172,11 +169,11 @@ export const Hero = () => {
                   }}
                 >
                   <div>
-                    <strong>Brainwave:</strong>I created one based on videos
-                    from Frontend Tribe!
+                    <strong>灵感闪现:</strong>我基于 Frontend Tribe
+                    的视频创建了一个！
                   </div>
                   <div className="text-right text-gray-400 text-sm font-semibold">
-                    Just now
+                    刚刚
                   </div>
                 </motion.div>
               </div>
@@ -186,7 +183,7 @@ export const Hero = () => {
                   <div className="bg-gray-950/80 flex items-center gap-4 px-4 py-2 rounded-2xl w-[320px] max-w-full mx-auto">
                     <Loader className="text-violet-400" />
                     <div className="font-semibold text-xl text-gray-100">
-                      AI is generating{" "}
+                      AI 正在生成{" "}
                       <span className="animate-cursor-blink">|</span>
                     </div>
                   </div>

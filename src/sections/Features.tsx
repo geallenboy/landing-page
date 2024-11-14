@@ -18,11 +18,7 @@ import Logo from "@/components/Logo";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export const features = [
-  "Effortless integration",
-  "Intelligent automation",
-  "Robust security",
-];
+export const features = ["轻松集成", "智能自动化", "强大的安全性"];
 
 export const logos = [
   {
@@ -76,7 +72,7 @@ export const Features = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
               <div>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-200 leading-tight">
-                  Your Ai-powered collaboration companion
+                  您的 AI 驱动的协作伙伴
                 </h2>
                 <ul className="mt-12 flex flex-col gap-8">
                   {features.map((feature) => (
@@ -89,7 +85,7 @@ export const Features = () => {
                     </li>
                   ))}
                 </ul>
-                <Button className="mt-16">Try it now</Button>
+                <Button className="mt-16">立即试用</Button>
               </div>
               <div className="flex justify-center">
                 <div className="size-[270px] md:size-[450px] relative flex flex-shrink-0">

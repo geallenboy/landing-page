@@ -124,7 +124,7 @@ export const CallToAction = () => {
               </motion.div>
             </div>
             <h2 className="text-gray-200 font-semibold text-3xl md:text-4xl lg:text-5xl max-w-3xl mx-auto text-center leading-tight">
-              Join the AI Revolution with{" "}
+              成为 AI 革命的一部分，加入{" "}
               <span className="relative">
                 <span>Sphereal</span>
                 <span
@@ -139,12 +139,11 @@ export const CallToAction = () => {
               </span>
             </h2>
             <p className="text-center mt-8 text-xl md:text-2xl lg:text-3xl max-w-2xl mx-auto">
-              Experience the transformative power of AI with Spherreal. Boost
-              your productivity and streamline your workflow with out innovative
-              AI chat platform.
+              体验 Sphereal 带来的变革性 AI 力量。通过我们创新的 AI
+              聊天平台，提升您的生产力并简化工作流程。
             </p>
             <div className="flex justify-center mt-10">
-              <Button variant="secondary">Get Started</Button>
+              <Button variant="secondary">开始使用</Button>
             </div>
           </SectionContent>
         </SectionBorder>

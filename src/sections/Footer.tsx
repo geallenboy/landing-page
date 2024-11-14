@@ -6,29 +6,28 @@ import {
   faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 export const navItems = [
   {
-    name: "Features",
+    name: "功能",
     href: "#features",
   },
   {
-    name: "Pricing",
+    name: "定价",
     href: "#pricing",
   },
   {
-    name: "Testimonials",
+    name: "客户评价",
     href: "#testimonials",
   },
   {
-    name: "Login",
+    name: "登录",
     href: "#login",
   },
 ];
 
 export const socialLinks = [
   {
-    name: "Youtube",
+    name: "YouTube",
     icon: faYoutube,
     href: "#youtube",
   },
@@ -79,9 +78,7 @@ export const Footer = () => {
               </a>
             ))}
           </div>
-          <p className="text-sm text-gray-500">
-            &copy; Frontend Tribe, All rights reserved.
-          </p>
+          <p className="text-sm text-gray-500">&copy; xxx, 版权所有.</p>
         </div>
       </div>
     </footer>

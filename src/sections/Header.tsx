@@ -6,15 +6,15 @@ import Orbit from "@/components/Orbit";
 import Logo from "@/components/Logo";
 export const navItems = [
   {
-    name: "Features",
+    name: "功能",
     href: "#features",
   },
   {
-    name: "Pricing",
+    name: "定价",
     href: "#pricing",
   },
   {
-    name: "Testimonials",
+    name: "客户评价",
     href: "#testimonials",
   },
 ];
@@ -22,12 +22,12 @@ export const navItems = [
 export const loginItems = [
   {
     buttonVariant: "tertiary",
-    name: "Login",
+    name: "登录",
     href: "#login",
   },
   {
     buttonVariant: "primary",
-    name: "Sign Up",
+    name: "注册",
     href: "#sign-up",
   },
 ] satisfies {

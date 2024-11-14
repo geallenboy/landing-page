@@ -4,49 +4,48 @@ import SectionContent from "@/components/SectionContent";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { twMerge } from "tailwind-merge";
-
 export const pricingTiers = [
   {
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "Free",
+    title: "基础版",
+    description: "AI 聊天机器人，个性化推荐",
+    price: "免费",
     buttonVariant: "secondary",
-    buttonText: "Get Started",
+    buttonText: "开始使用",
     features: [
-      "Access to AI chatbot for natural language conversations",
-      "Basic task automation for simple workflows",
-      "Limited message history storage",
+      "访问 AI 聊天机器人进行自然语言对话",
+      "基础任务自动化，简化工作流程",
+      "有限的消息历史存储",
     ],
     color: "amber",
     className: "lg:py-12 lg:my-6",
   },
   {
-    title: "Premium",
-    description: "Advanced AI capabilities for enhanced productivity",
+    title: "高级版",
+    description: "增强生产力的高级 AI 能力",
     price: 99,
     buttonVariant: "secondary",
-    buttonText: "Upgrade to Premium",
+    buttonText: "升级至高级版",
     features: [
-      "All Basic features included",
-      "Priority access to new AI features and updates",
-      "Advanced automation tools for seamless task management",
-      "Customizable chat templates for your specific workflows",
+      "包含所有基础版功能",
+      "优先访问新 AI 功能和更新",
+      "高级自动化工具，简化任务管理",
+      "可定制的聊天模板，适应您的工作流程",
     ],
     color: "violet",
     className: "lg:py-18 lg:my-0",
   },
   {
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
+    title: "企业版",
+    description: "定制化 AI 聊天机器人，高级分析，专属账户",
     price: null,
-    buttonText: "Contact Us",
+    buttonText: "联系我们",
     buttonVariant: "primary",
     features: [
-      "All Premium features included",
-      "Dedicated account manager and priority customer support",
-      "Enhanced security and compliance features for large teams",
-      "Custom AI models tailored to your organization's needs",
-      "API access for seamless integration with enterprise systems",
+      "包含所有高级版功能",
+      "专属账户经理和优先客户支持",
+      "增强的安全性和合规性，适用于大型团队",
+      "定制的 AI 模型，满足贵公司需求",
+      "API 接口，轻松与企业系统集成",
     ],
     color: "teal",
     className: "lg:py-12 lg:my-6",
@@ -69,7 +68,7 @@ export const Pricing = () => {
         <SectionBorder borderTop>
           <SectionContent className="md:px-20 lg:px-40">
             <h2 className="text-3xl md:text-4xl lg:text-5xl leading-tight font-semibold text-center text-gray-200 ">
-              Flexible plans for every need
+              满足各种需求的灵活计划
             </h2>
             <div className="mt-12 flex flex-col items-center lg:items-start lg:flex-row gap-8">
               {pricingTiers.map((tier) => (
@@ -98,7 +97,7 @@ export const Pricing = () => {
                       </span>
                     )}
 
-                    <span className="text-7xl font-semibold text-gray-200">
+                    <span className="text-6xl font-semibold text-gray-200">
                       {tier.price ? tier.price : <>&nbsp;</>}
                     </span>
                   </div>

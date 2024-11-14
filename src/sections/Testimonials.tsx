@@ -10,37 +10,37 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
-
 export const testimonials = [
   {
     quote:
-      "Sphereal has completely transformed the way we collaborate. The AI chatbot's ability to automate tasks and provide insightful recommendations has saved us hours each week. It's now an indispensable part of our workflow.",
+      "Sphereal 完全改变了我们协作的方式。AI 聊天机器人的任务自动化和提供有洞察力的建议功能每周为我们节省了几个小时。它现在已经是我们工作流程中不可或缺的一部分。",
     name: "Ashwin Santiago",
-    title: "Operations Manager",
+    title: "运营经理",
     image: AshwinSantiago,
   },
   {
     quote:
-      "Sphereal integrates effortlessly with our existing tools, and the AI chatbot feels like a natural extension of our team. The responses are impressively accurate, and it's always learning from our interactions.",
+      "Sphereal 与我们现有的工具无缝集成，AI 聊天机器人就像是我们团队的自然延伸。它的响应准确无误，并且总是从我们的互动中不断学习。",
     name: "Alec Whitten",
-    title: "Lead Developer",
+    title: "首席开发员",
     image: AlecWhitten,
   },
   {
     quote:
-      "Sphereal's AI has elevated our customer service to a whole new level. Its real-time responses and personalized recommendations help us address client needs faster than ever. I can't imagine our support team without it.",
+      "Sphereal 的 AI 将我们的客户服务提升到了一个全新的水平。它的实时响应和个性化建议帮助我们比以往更快地满足客户需求。我无法想象没有它的支持团队。",
     name: "Rene Wells",
-    title: "Customer Success Manager",
+    title: "客户成功经理",
     image: ReneWells,
   },
   {
     quote:
-      "I've never seen a tool like Sphereal. It's intuitive, responsive, and has helped us streamline projects that would normally take days. The AI capabilities are unmatched in terms of accuracy and speed.",
+      "我从未见过像 Sphereal 这样的工具。它直观、反应迅速，帮助我们精简了通常需要几天时间的项目。AI 的准确性和速度无与伦比。",
     name: "Mollie Hall",
-    title: "Product Designer",
+    title: "产品设计师",
     image: MollieHall,
   },
 ];
+
 export const Testimonials = () => {
   const [selectedTestimonialIndex, setSelectedTestimonialIndex] = useState(0);
 
